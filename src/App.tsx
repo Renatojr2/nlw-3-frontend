@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './images/Logo.svg';
+import './style/pages/landing.css';
+import {FiArrowRight} from 'react-icons/fi'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div id="page-landing">
+      <div className="content-wrapper">
+        <img src={logo} alt="logo do site" />
+
+        <main>
+          <h1>Leve felicidade para o mondo</h1>
+          <p>Visite orfanatos e mude o dia de uma criança</p>
+        </main>
+        <div className="location">
+          <strong>Leopoldina</strong>
+          <span>Minas Gerais</span>
+        </div>
+
+        <a href="" className="entre-app">
+          <FiArrowRight size={26} color='rgba(0,0,0,0.6)' />
         </a>
-      </header>
+      </div>
     </div>
   );
 }
